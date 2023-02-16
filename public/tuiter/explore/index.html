@@ -1,192 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+  <link href="index.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         rel="stylesheet"/>
-  <link href="index.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+          crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
   <title>Explore</title>
 </head>
 <body>
 
-<div class = "container pt-2">
-  <div class="row">
-
-    <!--Left Side -->
-    <div class="col-2 col-lg-1 col-xl-2">
-      <div class="list-group ">
-        <a href="#" class="list-group-item list-group-item-action">
-          <i class="fa-brands fa-twitter"></i></a>
-        <a href="" class="list-group-item list-group-item-action d-flex align-items-center">
-          <i class="fas fa-home"></i><span class="d-none d-xl-block ps-1"> Home</span></a>
-        <a href="" class="list-group-item list-group-item-action active d-flex align-items-center">
-          <i class="fas fa-hashtag"></i>  <span class="d-none d-xl-block ps-1"> Explore</span></a>
-        <a href="" class="list-group-item list-group-item-action d-flex align-items-center">
-          <i class="fas fa-bell"></i> <span class="d-none d-xl-block ps-1"> Notifications</span></a>
-        <a href="" class="list-group-item list-group-item-action d-flex align-items-center">
-          <i class="fas fa-envelope"></i><span class="d-none d-xl-block ps-1"> Messages</span></a>
-        <a href="" class="list-group-item list-group-item-action d-flex align-items-center">
-          <i class="fas fa-bookmark"></i> <span class="d-none d-xl-block ps-1"> Bookmarks</span></a>
-        <a href="" class="list-group-item list-group-item-action d-flex align-items-center">
-          <i class="fas fa-list"></i> <span class="d-none d-xl-block ps-1"> Lists</span></a>
-        <a href="" class="list-group-item list-group-item-action d-flex align-items-center">
-          <i class="fas fa-user"></i> <span class="d-none d-xl-block ps-1"> Profile</span></a>
-        <a href="" class="list-group-item list-group-item-action d-flex align-items-center">
-          <i class="fa-solid fa-ellipsis fa-sm"></i>
-          <span class="d-none d-xl-block ps-1"> More</span></a>
-      </div>
-      <button class="btn btn-primary rounded-pill w-100 mt-1">Tuit</button>
-    </div>
-
-    <!-- Middle -->
-    <div class="col-10 col-lg-7 col-xl-7">
-        <div class="position-relative d-flex align-content-center">
-          <input class="form-control rounded-pill ps-5 w-100" placeholder="Search Tuiter">
-          <i class="fa fa-search wd-search "></i>
-          <a class="wd-gear float-end ps-3"><i class="fa fa-cog fa-2x"></i></a>
-        </div>
-
-      <ul class="nav nav-tabs mt-1 mb-1 flex-nowrap">
-        <li class="nav-item">
-          <a class="nav-link active" href="for-you.html">For You</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="trending.html">Trending</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sports.html">Sports</a>
-        </li>
-        <li class="nav-item d-none d-md-block">
-          <a class="nav-link" href="entertainment.html" tabindex="-1">Entertainment</a>
-        </li>
-      </ul>
-      <div class="position-relative">
-        <img class = "mt-1" src="../../images/starship.jpg" width="100%">
-        <h2 class="position-absolute bottom-0 text-white ms-2">SpaceX's Starship</h2>
-      </div>
-
-      <ul class="list-group ">
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-7 col-lg-9">
-              <div class="text-secondary">Web Development</div>
-              <div class="fw-bolder">ReactJS <span class="text-secondary fw-normal">- 2h</span></div>
-              <div class="fw-bolder text-break">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
-            </div>
-            <div class="col-5 col-lg-3"> <img class="float-end" src="../../images/reactlogo.png" height="100px"> </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-7 col-lg-9">
-              <div class="fw-bolder">JavaScript <span class="fw-normal text-secondary">- 2h</span></div>
-              <div class="fw-bolder">javaScript is a programming language that can run on browsers as well as desktops</div>
-              <div class="text-secondary">123K Tweets</div>
-            </div>
-            <div class="col-5 col-lg-3"><img  class="float-end rounded" src="../../images/javascriptlogo.png" height="100px"> </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-7 col-lg-9">
-              <div class="text-secondary">Web Development</div>
-              <div class="fw-bolder">jQuery</div>
-              <div class="text-secondary">123K Tweets</div>
-            </div>
-            <div class="col-5 col-lg-3"><img  class="float-end rounded" src="../../images/jquerylogo.png" height="100px"> </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-7 col-lg-9">
-              <div class="text-secondary">Web Development</div>
-              <div class="fw-bolder">Node.JS <span class="fw-normal text-secondary">- 2h</span></div>
-              <div class="text-secondary">123K Tweets</div>
-            </div>
-            <div class="col-5 col-lg-3"><img  class="float-end rounded" src="../../images/nodejslogo.png" height="100px"> </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Right Side-->
-    <div class=" col-lg-4 col-xl-3 d-none d-lg-block">
-      <ul class="list-group">
-        <li class="list-group-item fw-bold">Who to Follow</li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2 mt-1 ">
-              <img class = "rounded-circle" src="../../images/javalogo.jpg" height=40px>
-            </div>
-            <div class="col-7 float-start">
-              <div class="fw-bolder">Java</div>
-              <div class="text-secondary fw-normal">@Java</div>
-            </div>
-            <div class="col-3">
-              <button class="btn-primary rounded-pill float-end mt-1">Follow</button></div>
-          </div>
-        </li> <!-- Java-->
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2 mt-1">
-              <img class = "rounded-circle" src="../../images/relativitylogo.jpg" height=40px>
-            </div>
-            <div class="col-7 float-start">
-              <div class="fw-bolder">Relativity Space</div>
-              <div class="text-secondary fw-normal">@relativityspace</div>
-            </div>
-            <div class="col-3">
-              <button class="btn-primary rounded-pill float-end mt-1">Follow</button></div>
-          </div>
-        </li> <!-- Relativity Space-->
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img class = "rounded-circle mt-1" src="../../images/virginlogo.png" height=40px>
-            </div>
-            <div class="col-7 float-start">
-              <div class="fw-bolder">Virgin Galactic</div>
-              <div class="text-secondary fw-normal">@virgingalactic</div>
-            </div>
-            <div class="col-3">
-              <button class="btn-primary rounded-pill float-end mt-1">Follow</button></div>
-          </div>
-        </li> <!-- Virgin -->
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img class = "rounded-circle mt-1" src="../../images/nasalogo.png" height=40px>
-            </div>
-            <div class="col-7 float-start">
-              <div class="fw-bolder">NASA</div>
-              <div class="text-secondary fw-normal">@NASA</div>
-            </div>
-            <div class="col-3">
-              <button class="btn-primary rounded-pill float-end mt-1">Follow</button></div>
-          </div>
-        </li> <!-- NASA-->
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img class = "rounded-circle mt-1" src="../../images/teslalogo.png" height=40px>
-            </div>
-            <div class="col-7 float-start">
-              <div class="fw-bolder">Tesla</div>
-              <div class="text-secondary fw-normal">@Tesla</div>
-            </div>
-            <div class="col-3">
-              <button class="btn-primary rounded-pill float-end mt-1">Follow</button></div>
-          </div>
-        </li> <!-- Tesla -->
-      </ul>
-    </div>
-
-  </div>
-</div>
+<div class="container" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
 </body>
 </html>
