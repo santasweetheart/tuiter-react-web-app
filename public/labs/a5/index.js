@@ -297,5 +297,3 @@ showBtn.click(showHandler);
 
 
 
-
-
