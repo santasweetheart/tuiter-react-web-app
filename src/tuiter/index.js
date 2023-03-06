@@ -16,7 +16,6 @@ function Tuiter() {
         <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
           <WhoToFollowList/>
         </div>
-        I am writing this to test this out
       </div>
   );
 }
