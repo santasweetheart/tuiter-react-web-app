@@ -7,7 +7,7 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import {useParams} from "react-router";
-import HomeComponent from "./home/whats-happening";
+import HomeComponent from "./home";
 
 const store = configureStore(
     {reducer: {who: whoReducer, tuits: tuitsReducer}});
@@ -20,8 +20,7 @@ function Tuiter() {
         <div className="col-2 col-md-2 col-lg-1 col-xl-2">
           <NavigationSidebar active={'home' || path }/>
         </div>
-        <div className="col-10 col-md-10 col-lg-7 col-xl-6"
-             style={{"position": "relative"}}>
+        <div className="col-10 col-md-10 col-lg-7 col-xl-6" style={{"position": "relative"}}>
           {( path === 'home' || path === undefined ) && <HomeComponent/>}
           {path === 'explore' && <ExploreComponent/>}
         </div>

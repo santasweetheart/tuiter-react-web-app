@@ -13,7 +13,7 @@ const WhatsHappening = () => {
     console.log(whatsHappening);
   }
   return (
-      <div className="row">
+     <div className="row">
         <div className="col-auto">
           <img src="../../images/nasalogo.png" width={60}/>
         </div>

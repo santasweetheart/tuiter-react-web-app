@@ -26,7 +26,7 @@ const tuitsSlice = createSlice({
         ...action.payload,
         ...templateTuit,
         _id: (new Date()).getTime(),
-        image: '../images/nasa_logo.jpeg',
+        image: '../images/nasalogo.png',
       })
     },
     deleteTuit(state, action) {

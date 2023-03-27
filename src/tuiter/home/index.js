@@ -1,5 +1,5 @@
 import React from "react";
-import TuitsList from "../tuits";
+import TuitList from "../tuits/tuit-list";
 import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
@@ -7,7 +7,7 @@ const HomeComponent = () => {
       <>
         <h4>Home</h4>
         <WhatsHappening/>
-        <TuitsList/>
+        <TuitList/>
       </>
   );
 };

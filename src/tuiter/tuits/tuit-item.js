@@ -4,7 +4,7 @@ import { deleteTuit } from "../reducers/tuits-reducer";
 
 import TuitStats from "./tuit-stats";
 
-const TuitItem = () => {
+const TuitItem = ({tuit}) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuit(id));
