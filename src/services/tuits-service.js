@@ -13,7 +13,7 @@ export const findTuits  = async ()     => {
 }
 export const deleteTuit = async (tuit) => {
   const response = await axios
-  .delete(`${TUITS_API}/${tid}`)
+  .delete(`${TUITS_API}/${tuit._id}`)
   return response.data
 }
 export const updateTuit = async (tuit) => {
