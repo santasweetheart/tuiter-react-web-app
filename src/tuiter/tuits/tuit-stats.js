@@ -4,10 +4,10 @@ import { updateTuitLikes } from "../reducers/tuits-reducer";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = ({ tuit }) => {
-  const dispatch = useDispatch();
-  const updateLikesTuitHandler = (id) => {
+ const dispatch = useDispatch();
+  /*const updateLikesTuitHandler = (id) => {
     dispatch(updateTuitLikes(id));
-  }
+  }*/
   return (
       <div className="row mt-2">
         <div className="col">
@@ -25,6 +25,13 @@ const TuitStats = ({ tuit }) => {
             likes: tuit.likes + 1
           }))} className="bi bi-heart-fill me-2 text-danger"/>
         </div>
+        <div className="col">
+          <i onClick={() => dispatch(updateTuitThunk({
+            ...tuit,
+            dislikes: tuit.dislikes + 1
+          }))} className="bi bi-hand-thumbs-down-fill me-2"/>
+        </div>
+        {' '} {tuit.dislikes}
         <div className="col">
           <i className="bi bi-share"/>
         </div>

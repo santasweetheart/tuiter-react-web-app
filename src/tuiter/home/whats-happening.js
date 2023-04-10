@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {createTuitThunk}
-  from "../../services/tuits-thunks";
+import {createTuitThunk} from "../../services/tuits-thunks";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
@@ -11,7 +10,7 @@ const WhatsHappening = () => {
       tuit: whatsHappening
     }
     dispatch(createTuitThunk(newTuit));
-    console.log(whatsHappening);
+    //console.log(whatsHappening);
   }
   return (
      <div className="row">
